@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>溪谷valley | 个人网站</title>
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
-    <style>
-        .black{color:black;}
-    </style>
-	<script>
-		$(document).ready(function(){
-	        $('#sc').load('https://zj.v.api.aa1.cn/api/wenan-shici/?type=text');
-	        $('#sc').click(function(){
-		        $('#sc').load('https://zj.v.api.aa1.cn/api/wenan-shici/?type=text');
-	        });
-        });
-	</script>
-</head>
-<body>
-	<div class="container-fluid p-5 bg-primary text-white text-center">
-    	<h1>溪谷valley</h1>
-    	<p id="sc">API错误</p>
-	</div>
-	<hr/>
-	<div class="container mt-3">
-		<h2>个人介绍：</h2>
-		<div class="card">
-			<div class="card-body">
-				<h3>我是溪谷，一个编程小白，还请大家多多关照~</h3>
-				<h4>我会：</h4>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>MarkDown</li>
-					<li>Python</li>
-					<li>C++（一点点）</li>
-				</ul>
+	<head>
+		<meta charset="UTF-8">
+		<title>溪谷valley | 个人网站</title>
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+		<style>
+			.black{color:black;}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$('#sc').load('https://zj.v.api.aa1.cn/api/wenan-shici/?type=text');
+				$('#sc').click(function(){
+					$('#sc').load('https://zj.v.api.aa1.cn/api/wenan-shici/?type=text');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid p-5 bg-primary text-white text-center">
+			<h1>溪谷valley</h1>
+			<p id="sc">API错误</p>
+		</div>
+		<div class="container mt-3">
+			<h2>个人介绍：</h2>
+			<div class="card">
+				<div class="card-body">
+					<h3>我是溪谷，一个编程小白，还请大家多多关照~</h3>
+					<h4>我会：</h4>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>MarkDown</li>
+						<li>Python</li>
+						<li>C++（一点点）</li>
+					</ul>
+				</div>
+			</div>
+			<h2>联系我：</h2>
+			<div class="card" style="text-align:center;">
+				<h3>QQ：1426965319</h3>
+				<div class="card-body">
+					<a class="black" target="_blank" href="https://space.bilibili.com/697283139" ><button class="btn btn-primary">B站</button></a>
+					<a class="black" target="_blank" href="https://github.com/xgvalley"><button class="btn btn-primary">GitHub</button></a>
+					<a class="black" target="_blank" href="https://gitee.com/xgvalley"><button class="btn btn-primary">Gitee</button></a>
+				</div>
 			</div>
 		</div>
-		<h2>联系我：</h2>
-		<div class="card" style="text-align:center;">
-			<h3>QQ：1426965319</h3>
-			<div class="card-body">
-				<a class="black" target="_blank" href="https://space.bilibili.com/697283139" ><button class="btn btn-primary">B站</button></a>
-				<a class="black" target="_blank" href="https://github.com/xgvalley"><button class="btn btn-primary">GitHub</button></a>
-				<a class="black" target="_blank" href="https://gitee.com/xgvalley"><button class="btn btn-primary">Gitee</button></a>
-			</div>
+		<br/>
+		<div class="container-fluid p-5 bg-primary text-white text-center">
+			<p>API来源：https://zj.v.api.aa1.cn/api/wenan-shici/?type=text</p>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
