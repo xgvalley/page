@@ -9,6 +9,10 @@
 		<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
 		<style>
 			.black{color:black;}
+			@font-face {
+				font-family: "HanYiWenHei-85W";
+				src: url("font/汉仪文黑.ttf");
+			}
 		</style>
 		<script>
 			$(document).ready(function(){
@@ -19,16 +23,25 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body style="font-family: HanYiWenHei-85W;">
 		<div class="container-fluid p-5 bg-primary text-white text-center">
 			<h1>溪谷valley</h1>
 			<p id="sc">API错误</p>
+		</div>
+		<div class="container">
+			<header class="d-flex justify-content-center py-3">
+			  <ul class="nav nav-pills">
+				<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">主页</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" onclick="alert('敬请期待！')">文章</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" onclick="alert('敬请期待！')">关于</a></li>
+			  </ul>
+			</header>
 		</div>
 		<div class="container mt-3">
 			<h2>个人介绍：</h2>
 			<div class="card">
 				<div class="card-body">
-					<h3>我是溪谷，一个编程小白，还请大家多多关照~</h3>
+					<h3></h3>
 					<h4>我会：</h4>
 					<ul>
 						<li>HTML</li>
@@ -42,6 +55,7 @@
 			</div>
 			<h2>联系我：</h2>
 			<div class="card" style="text-align:center;">
+				<br/>
 				<h3>QQ：1426965319</h3>
 				<div class="card-body">
 					<a class="black" target="_blank" href="https://space.bilibili.com/697283139" ><button class="btn btn-primary">B站</button></a>
