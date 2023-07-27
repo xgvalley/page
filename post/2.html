@@ -10,6 +10,10 @@
 		<link href="http://statics.1024tools.com/libs/highlight.js/styles/github.css" rel="stylesheet" />
 		<style>
 			@font-face {
+				font-family: "JetBrainsMono";
+				src: url("font/JetBrainsMono.ttf");
+			}
+			@font-face {
 				font-family: "HanYiWenHei-85W";
 				src: url("font/汉仪文黑.ttf");
 			}
@@ -40,35 +44,82 @@
 					<p style="text-align: right;">——百度百科</p>
 				</div>
 				<h3>Python</h3>
-				<pre><code style="padding:1%">print("Hello, World!")</code></pre>
+				<pre class="python" style="font-family:JetBrainsMono;"><code><span style="color: #ff7700;font-weight:bold;">print</span><span style="color: black;">&#40;</span><span style="color: #483d8b;">&quot;Hello, World!&quot;</span><span style="color: black;">&#41;</span></code></pre>
 				<h3>C</h3>
-				<pre><code style="padding:1%">#include&lt;stdio.h&gt;<br/>int main() {<br/>    printf("Hello, World!")<br/>    return 0;<br/>}</code></pre>
+				<div class="c" style="font-family:JetBrainsMono;"><code>
+					<span style="color: #339933;">#include&lt;stdio.h&gt;</span><br>
+					<span style="color: #993333;">int</span> main<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span><br>
+					&nbsp;&nbsp;<span style="color: #000066;">printf</span><span style="color: #009900;">&#40;</span><span style="color: #ff0000;">&quot;Hello, World!&quot;</span><span style="color: #009900;">&#41;</span><br>
+					&nbsp;&nbsp;<span style="color: #b1b100;">return</span> <span style="color: #0000dd;">0</span><span style="color: #339933;">;</span><br>
+					<span style="color: #009900;">&#125;</span>
+				</code></div>
 				<h3>C++</h3>
-				<pre><code style="padding:1%">#include&lt;iostream&gt;<br/>using namepsace std;<br/>int main() {<br/>    cout &lt;&lt; "Hello, World!";<br/>    return 0;<br/>}</code></pre>
+				<div class="cpp" style="font-family:JetBrainsMono;"><code>
+					<span style="color: #339900;">#include&lt;iostream&gt;</span><br>
+					<span style="color: #0000ff;">using</span> <span style="color: #0000ff;">namespace</span> std<span style="color: #008080;">;</span><br>
+					<span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;<span style="color: #0000dd;">cout</span> <span style="color: #000080;">&lt;&lt;</span> <span style="color: #FF0000;">&quot;Hello, World!&quot;</span><span style="color: #008080;">;</span><br>
+					&nbsp;&nbsp;<span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span><br>
+					<span style="color: #008000;">&#125;</span>
+				</code></div>
 				<h3>C#</h3>
-				<pre><code style="padding:1%">using System;<br><br>internal static class HelloWorld {<br>  private static void Main() {<br>    Console.WriteLine("Hello, World!");<br>  }<br>}</code></pre>
+				<div class="csharp" style="font-family:JetBrainsMono;"><code>
+					<span style="color: #0600FF; font-weight: bold;">using</span> <span style="color: #008080;">System</span><span style="color: #008000;">;</span><br><br>
+					<span style="color: #0600FF; font-weight: bold;">internal</span> <span style="color: #0600FF; font-weight: bold;">static</span> <span style="color: #6666cc; font-weight: bold;">class</span> HelloWorld <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;<span style="color: #0600FF; font-weight: bold;">private</span> <span style="color: #0600FF; font-weight: bold;">static</span> <span style="color: #6666cc; font-weight: bold;">void</span> Main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Console<span style="color: #008000;">.</span><span style="color: #0000FF;">WriteLine</span><span style="color: #008000;">&#40;</span><span style="color: #666666;">&quot;Hello, World!&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">;</span><br>
+					&nbsp;&nbsp;<span style="color: #008000;">&#125;</span><br>
+					<span style="color: #008000;">&#125;</span>
+				</code></div>
 				<h3>Objective-C</h3>
-				<pre><code style="padding:1%">#import &lt;Foundation/Foundation.h&gt;<br><br>int main() {<br>    @autoreleasepool {<br>        NSLog(@"Hello, World!");<br>    }<br>}</Foundation></code></pre>
+				<div class="ObjectiveC" style="font-family:JetBrainsMono;"><code>
+					<span style="color: #339900;">#import &lt;Foundation/Foundation.h&gt;</span><br><br>
+					<span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;@autoreleasepool <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;NSLog<span style="color: #008000;">&#40;</span>@<span style="color: #FF0000;">&quot;Hello, World!&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span><br>
+					&nbsp;&nbsp;<span style="color: #008000;">&#125;</span><br>
+					<span style="color: #008000;">&#125;</span>
+				</code></div>
 				<h3>JavaScript</h3>
-				<pre><code style="padding:1%">document.write('Hello, World!');</code></pre>
+				<pre class="ag" style="font-family:JetBrainsMono;"><code>document.write('Hello, World!');</code></pre>
 				<h3>Java</h3>
-				<pre><code style="padding:1%">class HelloWorld {<br/>  public static void main(String[] args) {<br/>    System.out.println("Hello, World!");<br/>  }<br>}</code></pre>
+				<div class="java" style="font-family:JetBrainsMono;"><code>
+					<span style="color: #000000; font-weight: bold;">class</span> HelloWorld <span style="color: #009900;">&#123;</span><br>
+					&nbsp;&nbsp;<span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">static</span> <span style="color: #000066; font-weight: bold;">void</span> main<span style="color: #009900;">&#40;</span><span style="color: #003399;">String</span><span style="color: #009900;">&#91;</span><span style="color: #009900;">&#93;</span> args<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #003399;">System</span>.<span style="color: #006633;">out</span>.<span style="color: #006633;">println</span><span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;Hello, World!&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span><br>
+					&nbsp;&nbsp;<span style="color: #009900;">&#125;</span><br>
+					<span style="color: #009900;">&#125;</span>
+				</code></div>
 				<h3>Ruby</h3>
-				<pre><code style="padding:1%">puts "Hello, World!"</code></pre>
+				<pre class="ruby" style="font-family:JetBrainsMono;"><code><span style="color:#CC0066; font-weight:bold;">puts</span> <span style="color:#996600;">&quot;Hello, World!&quot;</span></code></pre>
 				<h3>Rust</h3>
-				<pre><code style="padding:1%">fn main() {<br>    println("Hello, World!");<br>}</code></pre>
+				<div class="rust" style="font-family:JetBrainsMono;"><code>
+					<span style="color: #708;">fn</span> main<span>&#40;</span><span>&#41;</span> <span>&#123;</span><br>
+					&nbsp;&nbsp;println<span>&#40;</span><span style="color: #a11;">&quot;Hello, World!&quot;</span><span>&#41;</span><span style="color: #339933;">;</span><br>
+					<span>&#125;</span>
+				</code></div>
 				<h3>Go</h3>
-				<pre><code style="padding:1%">package main<br><br>import "fmt"<br><br>func main() {<br>  fmt.Println("Hello, World!")<br>}</code></pre>
+				<div class="go" style="font-family:JetBrainsMono;"><code>
+					package main<br><br>
+					import <span style="color: #FF0000;">&quot;fmt&quot;</span><br><br>
+					func main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span> <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;fmt.<span style="color: #007788;">Println</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;Hello, World!&quot;</span><span style="color: #008000;">&#41;</span><br>
+					<span style="color: #008000;">&#125;</span>
+				</code></div>
 				<h3>Scale</h3>
-				<pre><code style="padding:1%">object HelloWorld extends App {<br>  println("Hello, World!")<br>}</code></pre>
+				<div class="cpp" style="font-family:JetBrainsMono;"><code>
+					object HelloWorld extends App <span style="color: #008000;">&#123;</span><br>
+					&nbsp;&nbsp;println<span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;Hello, World!&quot;</span><span style="color: #008000;">&#41;</span><br>
+					<span style="color: #008000;">&#125;</span>
+				</code></div>
 				<h3>Lua</h3>
-				<pre><code style="padding:1%">print("Hello, World!")</code></pre>
+				<pre class="lua" style="font-family:JetBrainsMono;"><code><span style="color: #0000aa;">print</span><span style="color: #66cc66;">&#40;</span><span style="color: #ff6666;">&quot;Hello, World!&quot;</span><span style="color: #66cc66;">&#41;</span></code></pre>
 				<h3>PHP</h3>
-				<pre><code style="padding:1%">&lt;? echo "Hello, World!" ?&gt;</code></pre>
+				<pre class="php" style="font-family:JetBrainsMono;"><code><span style="color: #000000; font-weight: bold;">&lt;?</span> <span style="color: #b1b100;">echo</span> <span style="color: #0000ff;">&quot;Hello, World!&quot;</span> <span style="color: #000000; font-weight: bold;">?&gt;</span></code></pre>
 				<h3>swift</h3>
-				<pre><code style="padding:1%">print("Hello, World!")</code></pre>
+				<pre class="swift" style="font-family:JetBrainsMono;"><code><span style="color: #508187;">print</span><span style="color: black;">&#40;</span><span style="color: #C41A16;">&quot;Hello, World!&quot;</span><span style="color: black;">&#41;</span></code></pre>
 				<h3>Prel</h3>
-				<pre><code style="padding:1%">print "Hello, World!\n";</code></pre>
+				<pre class="perl" style="font-family:JetBrainsMono;"><code><span style="color: #000066;">print</span> <span style="color: #ff0000;">&quot;Hello, World!<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #339933;">;</span></code></pre>
 				<h3>汇编</h3>
 				<pre><code style="padding:1%">bdos    equ    0005H    ; BDOS entry point<br>start:  mvi    c,9      ; BDOS function: output string<br>        lxi    d,msg$   ; address of msg<br>        call   bdos<br>        ret             ; return to CCP<br>msg$:   db    'Hello, world!$'<br>end     start</code></pre>
 			</div>
