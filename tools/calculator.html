@@ -13,6 +13,21 @@
 				src: url("font/汉仪文黑.ttf");
 			}
 		</style>
+		<script>
+			function calculat() {
+				try {
+					document.getElementById("result").innerHTML = eval(document.getElementById("input").value);
+				} catch {
+					document.getElementById("result").innerHTML = "错误！";
+				}
+			}
+			function detectionKeyboard() {
+				var e = event || window.event || arguments.callee.caller.arguments[0];
+				if(e && e.keyCode == 13){ // enter 键
+					calculat();
+				}
+			}
+		</script>
 	</head>
 	<body style="font-family: HanYiWenHei-85W;">
 		<div class="container-fluid p-5 bg-primary text-white text-center">
@@ -21,20 +36,21 @@
 		</div>
 		<div class="container">
 			<header class="d-flex justify-content-center py-3">
-			  <ul class="nav nav-pills">
-				<li class="nav-item"><a href="./index.html" class="nav-link">主页</a></li>
-				<li class="nav-item"><a href="./posts.html" class="nav-link">帖子</a></li>
-				<li class="nav-item"><a href="./tools.html" class="nav-link">工具</a></li>
-				<li class="nav-item"><a href="./about.html" class="nav-link active" aria-current="page">关于</a></li>
-			  </ul>
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="../index.html" class="nav-link">主页</a></li>
+					<li class="nav-item"><a href="../posts.html" class="nav-link">帖子</a></li>
+					<li class="nav-item"><a href="../tools.html" class="nav-link">工具</a></li>
+					<li class="nav-item"><a href="../about.html" class="nav-link">关于</a></li>
+				</ul>
 			</header>
 		</div>
-		<div class="container mt-3" style="text-align: center;">
-			<h2>关于</h2>
+		<div class="container mt-3">
 			<div class="card" style="padding: 5%">
-				<p>昵称：溪谷</p>
-				<p>网页搭建平台：GitHub Pages</p>
-				<p>项目地址：<a href="https://www.github.com/xgvalley/page">点击进入</a></p>
+				<div style="text-align: center;">
+					请输入表达式：<input id="input" type="text" onkeyup="detectionKeyboard()"/><button onclick="calculat()">运算</button>
+					<br/><br/>
+					<p style="font-size: 25px">结果：<spen id="result"></spen></p>
+				</div>
 			</div>
 		</div>
 		<br/>
