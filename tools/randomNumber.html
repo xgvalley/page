@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>溪谷valley | 个人网站</title>
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+		<style>
+			@font-face {
+				font-family: "HanYiWenHei-85W";
+				src: url("font/汉仪文黑.ttf");
+			}
+		</style>
+		<script>
+			function randint(min, max) {
+				return Math.floor(Math.random() * (max - min + 1) ) + min;
+			}
+			function getRandom() {
+				try {
+					var times = parseInt(document.getElementById("times").value);
+					if(times <= 10000) {
+						var res = "";
+						for(var i = 0; i < times; i++) {
+							res += randint(parseInt(document.getElementById("min").value), parseInt(document.getElementById("max").value)).toString() + " ";
+						}
+						document.getElementById("result").innerHTML = res;
+					} else {
+						document.getElementById("result").innerHTML = "次数过大！";
+					}
+				} catch {
+					document.getElementById("result").innerHTML = "错误！";
+				}
+			}
+			function detectionKeyboard() {
+				var e = event || window.event || arguments.callee.caller.arguments[0];
+				if(e && e.keyCode == 13){ // enter 键
+					getRandom();
+				}
+			}
+		</script>
+	</head>
+	<body style="font-family: HanYiWenHei-85W;">
+		<div class="container-fluid p-5 bg-primary text-white text-center">
+			<h1>溪谷</h1>
+			<p>山耸千层青翡翠，溪流万顷碧琉璃。</p>
+		</div>
+		<div class="container">
+			<header class="d-flex justify-content-center py-3">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="../index.html" class="nav-link">主页</a></li>
+					<li class="nav-item"><a href="../posts.html" class="nav-link">帖子</a></li>
+					<li class="nav-item"><a href="../tools.html" class="nav-link">工具</a></li>
+					<li class="nav-item"><a href="../about.html" class="nav-link">关于</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="container mt-3">
+			<div class="card" style="padding: 5%">
+				<div style="text-align: center;">
+					最小整数：<input id="min" type="text" onkeyup="detectionKeyboard()"/><br>
+					最大整数：<input id="max" type="text" onkeyup="detectionKeyboard()"/><br>
+					随机次数：<input id="times" type="text" onkeyup="detectionKeyboard()"/><br><br>
+					<button onclick="getRandom()">开始随机</button>
+					<br/><br/>
+					<p style="font-size: 25px">结果：<spen id="result"></spen></p>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<div class="container-fluid p-5 bg-primary text-white text-center">
+			<p>联系我：1426965319@qq.com</p>
+			<p>CopyRight © 2023 溪谷 - All rights reserved</p>
+		</div>
+	</body>
+</html>
